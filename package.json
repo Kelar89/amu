@@ -1,18 +1,16 @@
 {
   "name": "amu",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "Portfolio Website",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npx @11ty/eleventy --serve",
+    "build": "npx @11ty/eleventy"
   },
   "keywords": [],
-  "author": "",
+  "author": "Kelar89",
   "license": "ISC",
-  "description": "",
   "devDependencies": {
-    "@11ty/eleventy": "^3.1.2"
-  },
-  "dependencies": {
-    "luxon": "^3.7.1"
+    "@11ty/eleventy": "^2.0.1",
+    "luxon": "^3.4.4"
   }
 }
