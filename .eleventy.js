@@ -1,13 +1,12 @@
-// File: .eleventy.js (Versi Final untuk Custom Domain)
+// File: .eleventy.js (Versi Final untuk Custom Domain - TANPA CMS)
 
 const { DateTime } = require("luxon");
 
 module.exports = function(eleventyConfig) {
-  // Salin semua folder yang dibutuhkan ke folder output (_site)
+  // Salin folder-folder yang dibutuhkan ke website final
   eleventyConfig.addPassthroughCopy("img");
   eleventyConfig.addPassthroughCopy("css");
   eleventyConfig.addPassthroughCopy("js");
-  eleventyConfig.addPassthroughCopy("admin");
 
   // Menambahkan filter untuk format tanggal
   eleventyConfig.addFilter("date", (dateObj, format) => {
@@ -15,21 +14,16 @@ module.exports = function(eleventyConfig) {
     return dt.toFormat(format);
   });
 
-  // Menambahkan filter untuk membuat slug (misal: "Web Design" -> "web-design")
+  // Menambahkan filter untuk membuat slug
   eleventyConfig.addFilter("slugify", function(str) {
-    if (!str) {
-        return;
-    }
-    return str
-        .toString()
-        .toLowerCase()
-        .trim()
-        .replace(/\s+/g, '-') // Ganti spasi dengan -
-        .replace(/[^\w-]+/g, '') // Hapus semua karakter non-kata
-        .replace(/--+/g, '-'); // Ganti -- ganda dengan - tunggal
+    if (!str) return;
+    return str.toString().toLowerCase().trim()
+        .replace(/\s+/g, '-')
+        .replace(/[^\w-]+/g, '')
+        .replace(/--+/g, '-');
   });
 
-  // Mengembalikan konfigurasi direktori TANPA pathPrefix
+  // Mengembalikan konfigurasi direktori (TANPA pathPrefix)
   return {
     dir: {
       input: ".",
