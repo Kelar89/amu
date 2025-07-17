@@ -1,26 +1,21 @@
-// File: .eleventy.js (Versi Final Lengkap)
+// File: .eleventy.js (Versi Final untuk Custom Domain)
 
 const { DateTime } = require("luxon");
 
 module.exports = function(eleventyConfig) {
-  // Salin folder img, css, dan js ke folder output (_site)
+  // Salin semua folder yang dibutuhkan ke folder output (_site)
   eleventyConfig.addPassthroughCopy("img");
   eleventyConfig.addPassthroughCopy("css");
   eleventyConfig.addPassthroughCopy("js");
   eleventyConfig.addPassthroughCopy("admin");
 
-  // Ini adalah bagian kunci untuk GitHub Pages dengan subfolder
-  const pathPrefix = process.env.NODE_ENV === 'production' ? "/amu/" : "/";
-  
-  // Menambahkan filter 'date'
+  // Menambahkan filter untuk format tanggal
   eleventyConfig.addFilter("date", (dateObj, format) => {
     const dt = (dateObj === "now") ? DateTime.now() : DateTime.fromJSDate(dateObj, { zone: 'utc' });
     return dt.toFormat(format);
   });
 
-  // ==============================================================
-  // ALAT BARU (FILTER) UNTUK MEMBUAT SLUG (misal: "Web Design" -> "web-design")
-  // ==============================================================
+  // Menambahkan filter untuk membuat slug (misal: "Web Design" -> "web-design")
   eleventyConfig.addFilter("slugify", function(str) {
     if (!str) {
         return;
@@ -33,10 +28,9 @@ module.exports = function(eleventyConfig) {
         .replace(/[^\w-]+/g, '') // Hapus semua karakter non-kata
         .replace(/--+/g, '-'); // Ganti -- ganda dengan - tunggal
   });
-  // ==============================================================
 
+  // Mengembalikan konfigurasi direktori TANPA pathPrefix
   return {
-    pathPrefix: pathPrefix,
     dir: {
       input: ".",
       includes: "_includes",
