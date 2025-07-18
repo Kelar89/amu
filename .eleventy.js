@@ -1,4 +1,4 @@
-// File: .eleventy.js (INI KODE YANG BENAR)
+// File: .eleventy.js (Versi Final yang Diperbaiki dengan Filter 'limit')
 
 const { DateTime } = require("luxon");
 
@@ -7,8 +7,6 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("img");
   eleventyConfig.addPassthroughCopy("css");
   eleventyConfig.addPassthroughCopy("js");
-  // Kita hapus "admin" untuk sementara sampai situs utama benar
-  // eleventyConfig.addPassthroughCopy("admin"); 
 
   // Menambahkan filter untuk format tanggal
   eleventyConfig.addFilter("date", (dateObj, format) => {
@@ -23,6 +21,13 @@ module.exports = function(eleventyConfig) {
         .replace(/\s+/g, '-')
         .replace(/[^\w-]+/g, '')
         .replace(/--+/g, '-');
+  });
+  
+  // ==========================================================
+  // FILTER BARU YANG LUPA DITAMBAHKAN (INI SOLUSINYA)
+  // ==========================================================
+  eleventyConfig.addFilter("limit", function (arr, limit) {
+    return arr.slice(0, limit);
   });
 
   // Mengembalikan konfigurasi direktori untuk custom domain (tanpa pathPrefix)
