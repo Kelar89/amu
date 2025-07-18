@@ -1,7 +1,7 @@
 ---
 layout: base.njk
 ---
-<div class="container py-5">
+<div class="container py-5 mt-4">
     <div class="row justify-content-center">
         <div class="col-lg-10">
             <div class="text-center mb-5">
@@ -12,23 +12,25 @@ layout: base.njk
             
             <div class="row g-5">
                 <div class="col-lg-8">
-                    <h3 class="fw-bold">Tantangan Klien</h3>
-                    <p class="text-white-50">{{ project.challenge }}</p>
-                    <hr class="my-4">
-                    <h3 class="fw-bold">Solusi yang Saya Tawarkan</h3>
-                    <p class="text-white-50">{{ project.solution }}</p>
-                    <hr class="my-4">
-                    <h3 class="fw-bold">Hasil Akhir</h3>
-                    <p class="text-white-50">{{ project.result }}</p>
+                    <div class="case-study-content">
+                        <h3 class="fw-bold">Tantangan Klien</h3>
+                        <p class="text-white-50">{{ project.challenge }}</p>
+                        <hr class="my-4">
+                        <h3 class="fw-bold">Solusi yang Saya Tawarkan</h3>
+                        <p class="text-white-50">{{ project.solution }}</p>
+                        <hr class="my-4">
+                        <h3 class="fw-bold">Hasil Akhir</h3>
+                        <p class="text-white-50">{{ project.result }}</p>
+                    </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="sticky-top" style="top: 2rem;">
-                        <h5 class="fw-bold">Detail Proyek</h5>
+                    <div class="portfolio-card p-4">
+                        <h5 class="fw-bold text-white mb-3">Detail Proyek</h5>
                         <ul class="list-unstyled">
-                            <li><strong>Klien:</strong> {{ project.client_name }}</li>
-                            <li><strong>Tahun:</strong> {{ project.year }}</li>
+                            <li class="mb-2"><strong>Klien:</strong><br>{{ project.client_name }}</li>
+                            <li><strong>Tahun:</strong><br>{{ project.year }}</li>
                         </ul>
-                        <a href="/contact/" class="btn btn-neon w-100">Mulai Proyek Serupa</a>
+                        <a href="/contact/" class="btn btn-neon w-100 mt-3">Mulai Proyek Serupa</a>
                     </div>
                 </div>
             </div>
