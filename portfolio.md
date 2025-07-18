@@ -1,27 +1,26 @@
 ---
 layout: base.njk
-title: My Works
+title: Karya Saya
 ---
 <div class="container py-5">
 <div class="text-center mb-5">
-<h2 class="text-neon d-block mb-2">My Works</h2>
-<p class="h3">Here’s A Glimpse Of The Projects I’ve Had<br>The Privilege To Create.</p>
+<h2 class="text-neon d-block mb-2">Bukan Sekadar Portofolio.</h2>
+<p class="h3">Ini adalah galeri bukti. Setiap karya adalah cerita tentang<br>masalah yang dipecahkan dan kesuksesan yang diraih bersama klien.</p>
 </div>
-
 <div class="row justify-content-center mb-4">
 <div class="col-auto">
 <div class="btn-group" role="group" id="portfolio-filter">
-<button type="button" class="btn btn-neon-outline active" data-filter="*">All</button>
+<button type="button" class="btn btn-neon-outline active" data-filter="*">Semua</button>
 <button type="button" class="btn btn-neon-outline" data-filter="web-design">Web Design</button>
 <button type="button" class="btn btn-neon-outline" data-filter="ui-ux-design">UI/UX Design</button>
 <button type="button" class="btn btn-neon-outline" data-filter="mobile-app">Mobile App</button>
 </div>
 </div>
 </div>
-
 <div class="row portfolio-grid">
 {%- for project in projects -%}
 <div class="col-md-6 col-lg-4 portfolio-item {{ project.category | slugify }}">
+<a href="/portfolio/{{ project.slug }}/" class="portfolio-link">
 <div class="portfolio-card mb-4">
 <img src="{{ project.image | url }}" class="img-fluid" alt="{{ project.title }}">
 <div class="p-3">
@@ -29,6 +28,7 @@ title: My Works
 <small class="text-white-50">{{ project.category }}</small>
 </div>
 </div>
+</a>
 </div>
 {%- endfor -%}
 </div>

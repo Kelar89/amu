@@ -191,3 +191,44 @@ body {
     margin: 0;
     overflow: hidden;
 }
+/* Styling untuk Footer Baru */
+.footer-section {
+    background-color: #14141a;
+}
+.footer-section a {
+    color: var(--bs-secondary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.footer-section a:hover {
+    color: var(--neon-green);
+}
+.footer-section .social-icon {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--border-color);
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* Styling untuk Logo Klien */
+.client-logos .client-logo-item img {
+    max-height: 35px; /* Atur tinggi maksimal logo */
+    filter: grayscale(100%) brightness(2);
+    opacity: 0.6;
+    transition: all 0.3s ease;
+}
+.client-logos .client-logo-item:hover img {
+    filter: grayscale(0%) brightness(1);
+    opacity: 1;
+}
+
+/* Styling untuk Link Portofolio */
+a.portfolio-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
