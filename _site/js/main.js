@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
 *Pesan Baru dari Website Portofolio*
 -----------------------------------
 
-Halo Lauren, saya ingin menghubungi Anda.
+Halo Umar, saya ingin menghubungi Anda.
 
 *Berikut adalah detail pengirim:*
 • *Nama:* ${name}
