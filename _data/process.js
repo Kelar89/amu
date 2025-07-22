@@ -1,27 +1,18 @@
 // File: _data/process.js
 module.exports = [
   {
-    "step": "01",
-    "title": "Diskusi & Strategi",
-    "description": "Kita mulai dengan sesi konsultasi mendalam untuk memahami visi, tujuan, dan audiens bisnis Anda. Outputnya adalah sebuah rencana strategis yang solid.",
-    "icon": "bi-compass"
+    "title": "Kirim Tugasmu",
+    "description": "Kasih tahu aja singkat: Mau edit PDF? Rapihin laporan? Cukup kirim file atau chat kebutuhannya.",
+    "icon": "bi-chat-dots"
   },
   {
-    "step": "02",
-    "title": "Desain & Prototyping",
-    "description": "Rencana strategis diubah menjadi desain visual (mockup) yang interaktif. Tidak ada coding sebelum desain disetujui 100% oleh Anda.",
-    "icon": "bi-palette2"
+    "title": "Dapat Estimasi Cepat",
+    "description": "Kami balas dengan harga dan durasi kerja. Jelas dari awal, tanpa biaya tersembunyi.",
+    "icon": "bi-clipboard-check"
   },
   {
-    "step": "03",
-    "title": "Pengembangan & Eksekusi",
-    "description": "Di sinilah keajaiban teknis terjadi. Saya membangun proyek Anda dengan kode yang bersih, efisien, dan siap untuk tumbuh bersama bisnis Anda.",
-    "icon": "bi-code-slash"
-  },
-  {
-    "step": "04",
-    "title": "Revisi & Peluncuran",
-    "description": "Anda akan meninjau versi final. Setelah semua sempurna, kita akan meluncurkan mahakarya digital Anda ke seluruh dunia.",
-    "icon": "bi-rocket-takeoff"
+    "title": "Tugasmu? Kelar.",
+    "description": "Hasil dikirim tepat waktu, kualitas terjamin. Kamu bisa lanjut fokus ke hal penting lainnya.",
+    "icon": "bi-check2-circle"
   }
 ];

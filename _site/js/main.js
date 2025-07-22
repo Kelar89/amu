@@ -88,3 +88,32 @@ Terima kasih.
     }
 
 }); // Penutup untuk DOMContentLoaded
+// File: js/main.js
+
+document.addEventListener('DOMContentLoaded', function() {
+    
+    // ... (kode WhatsApp dan filter portofolio Anda biarkan di atas sini)
+
+    // ======================================================
+    // KODE BARU UNTUK TOMBOL SCROLL TO TOP
+    // ======================================================
+    const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+
+    if (scrollToTopBtn) {
+        // Tampilkan tombol saat pengguna scroll ke bawah 200px
+        window.onscroll = function() {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                scrollToTopBtn.style.display = "flex";
+            } else {
+                scrollToTopBtn.style.display = "none";
+            }
+        };
+
+        // Saat tombol diklik, scroll kembali ke atas
+        scrollToTopBtn.addEventListener('click', function() {
+            document.body.scrollTop = 0; // Untuk Safari
+            document.documentElement.scrollTop = 0; // Untuk Chrome, Firefox, IE dan Opera
+        });
+    }
+
+}); // Penutup untuk DOMContentLoaded
