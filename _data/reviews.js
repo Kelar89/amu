@@ -1,27 +1,27 @@
 // File: _data/reviews.js
 module.exports = [
   {
-    "quote": "Bekerja dengan Umar adalah sebuah keputusan terbaik. Profesional, berorientasi pada detail, dan sangat berbakat.",
+    "quote": "Berkat CV baru buatan Umar, saya berhasil lolos seleksi administrasi di 3 perusahaan impian saya. Prosesnya cepat dan hasilnya luar biasa!",
     "author": "Andi Pratama",
-    "origin": "Jakarta, Indonesia",
+    "origin": "Mahasiswa Tingkat Akhir, Jakarta",
     "avatar": "/img/avatar-1.jpg"
   },
   {
-    "quote": "Umar mengubah visi kami menjadi website yang menakjubkan. Kemampuannya memadukan kreativitas dengan fungsionalitas tidak tertandingi.",
+    "quote": "Laporan bulanan yang tadinya berantakan jadi sangat rapi dan profesional. Umar benar-benar menghemat waktu tim kami puluhan jam setiap bulannya. Sangat bisa diandalkan!",
     "author": "Citra Lestari",
-    "origin": "Surabaya, Indonesia",
+    "origin": "Manajer Pemasaran, Surabaya",
     "avatar": "/img/avatar-2.jpg"
   },
   {
-    "quote": "Hasil akhirnya melampaui semua ekspektasi kami. Sangat direkomendasikan untuk siapa pun yang mencari desainer dan developer papan atas.",
+    "quote": "Saya pusing menggabungkan banyak file PDF untuk tugas akhir. Umar menyelesaikannya dalam hitungan menit. Cepat, responsif, dan hasilnya sempurna. Terima kasih banyak!",
     "author": "Budi Santoso",
-    "origin": "Bandung, Indonesia",
+    "origin": "Peneliti Akademis, Bandung",
     "avatar": "/img/avatar-3.jpg"
   },
   {
-    "quote": "Proses kolaborasinya sangat lancar dan komunikatif. Umar benar-benar memahami apa yang kami butuhkan dan mewujudkannya dengan sempurna.",
+    "quote": "Umar bukan sekadar asisten, tapi partner yang proaktif. Semua tugas administratif yang saya delegasikan selalu selesai tepat waktu dan melebihi ekspektasi.",
     "author": "Dewi Anggraini",
-    "origin": "Yogyakarta, Indonesia",
+    "origin": "Pemilik UKM, Yogyakarta",
     "avatar": "/img/avatar-4.jpg"
   }
 ];

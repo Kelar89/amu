@@ -35,7 +35,7 @@ body {
 
 /* Styling untuk Judul Utama (Headline) agar lebih tebal & rapat */
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 700; /* Membuat semua judul tebal secara default */
+  font-weight: 500; /* Membuat semua judul tebal secara default */
 }
 
 h1.display-2 {

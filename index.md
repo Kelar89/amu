@@ -1,18 +1,18 @@
 ---
 layout: base.njk
-title: Virtual Asisten | Partner Produktivitas Anda
+title: Solusi Tugas Administratif & Dokumen Anda
 ---
 <div class="container my-auto">
 <div class="row align-items-center justify-content-center py-5">
 <div class="col-12 col-lg-7">
 <div class="text-center text-lg-start pe-lg-5">
-<h4 class="text-neon fw-bold mb-3">VIRTUAL ASSISTANT ANDA</h4>
-<h1 class="display-2 fw-bold lh-1 mb-4">Jangan Kerjakan<br>Semuanya<br>Sendirian.</h1>
+<h4 class="text-neon fw-bold mb-3">AMI.MY.ID - VIRTUAL ASSISTANT ANDA</h4>
+<h1 class="display-2 fw-bold lh-1 mb-4">Capek & Ribet Ngurus Ini-Itu? Kamu Fokus, Kami yang Beresin.</h1>
 <p class="lead text-white-50 mb-4">
-Bayangkan hari esok, di mana Anda hanya fokus pada ide-ide besar. Semua detail kecil yang rumit? Anggap saja sudah beres.
+Kami adalah partner andal Anda untuk semua urusan dokumen, administratif, dan tugas teknis yang membuang waktu. Dapatkan kembali fokus Anda, kami urus sisanya.
 </p>
 <a href="/layanan/" class="btn btn-neon rounded-pill px-4 py-2">
-Lihat Solusi Saya →
+Lihat Semua Layanan →
 </a>
 </div>
 </div>
@@ -25,6 +25,4 @@ Lihat Solusi Saya →
 </div>
 </div>
 </div>
-</div>
-
 </div>
